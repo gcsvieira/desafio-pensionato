@@ -2,8 +2,6 @@ package applications;
 
 import java.util.Scanner;
 
-import javax.print.DocPrintJob;
-
 import entities.Room;
 import entities.Student;
 
