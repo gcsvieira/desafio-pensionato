@@ -39,7 +39,7 @@ public class Student {
     public String toString() {
         return "Nome: "
                 + getName()
-                + "Email: "
+                + ", "
                 + getEmail();
     }
 

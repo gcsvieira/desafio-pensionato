@@ -46,7 +46,7 @@ public class App {
 
         System.out.println("\nQuartos ocupados: ");
 
-        for (int i = 0; i < student.length; i++) {
+        for (int i = 0; i < room.length; i++) {
             if (room[i].getStudentOwner() != null) {
                 System.out.println(i + ": " + room[i].getStudentOwner().toString());
             }
