@@ -20,10 +20,6 @@ public class App {
                 System.out.println("\n\nNúmero inválido! Tente novamente.\n");
         } while (numberStudents > 10);
 
-        for (int i = 0; i < room.length; i++) {
-            room[i] = new Room(i);
-        }
-
         student = new Student[numberStudents];
 
         for (int i = 0; i < student.length; i++) {
@@ -39,13 +35,13 @@ public class App {
             System.out.println();
 
             student[i] = new Student(nome, email, room[id]);
-            room[id].setStudentOwner(student[i], rent);
+            room[id] = new Room(id, rent, student[i]);
         }
 
         System.out.println("\nQuartos ocupados: ");
 
         for (int i = 0; i < room.length; i++) {
-            if (room[i].getStudentOwner() != null) {
+            if (room[i] != null) {
                 System.out.println(i + ": " + room[i].getStudentOwner().toString());
             }
         }
